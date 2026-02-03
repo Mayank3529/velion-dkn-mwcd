@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Knowledge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h2>Knowledge Repository</h2>
+    <button type="button" onclick="logout()">Logout</button>
+</header>
+
+<div class="card">
+    <input type="text" id="search" placeholder="Search by title">
+    <button type="button" onclick="loadKnowledge()">Search</button>
+</div>
+
+<div id="results"></div>
+
+<script src="app.js"></script>
+
+<script>
+  if ('WebSocket' in window) {
+      socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+      };
+  }
+</script>
+
+</body>
+</html>

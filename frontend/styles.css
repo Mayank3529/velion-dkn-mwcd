@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #E3F2FD, #FCE4EC);
+    color: #333;
+}
+
+/* ---------- Header ---------- */
+header {
+    background: #1565C0;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background: #EF5350;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ---------- Center ---------- */
+.centered {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------- Card ---------- */
+.card {
+    background: white;
+    width: 90%;
+    max-width: 420px;
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card h2, h3 {
+    text-align: center;
+    color: #1565C0;
+}
+
+/* ---------- Inputs ---------- */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* ---------- Buttons ---------- */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #1565C0;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0D47A1;
+}
+
+/* ---------- Results ---------- */
+#results {
+    max-width: 900px;
+    margin: auto;
+}
+
+.result-card {
+    margin: 15px auto;
+    animation: fadeIn 0.4s ease;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 10px;
+    background: #E3F2FD;
+    color: #1565C0;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+/* ---------- Animation ---------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+    header h2 {
+        font-size: 18px;
+    }
+}
